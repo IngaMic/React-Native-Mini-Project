@@ -48,6 +48,14 @@ class MyProvider extends Component {
         });
     };
 
+    resetGameHandler = () => {
+        this.setState({
+            state: 1,
+            players: [],
+            result: "",
+        });
+    };
+
     render() {
         <MyContext.Provider
             value={{
@@ -55,6 +63,8 @@ class MyProvider extends Component {
                 addPlayer: this.addPlayerHandler,
                 removePlayer: this.removePlayerHandler,
                 next: this.nextHandler,
+                getNewPayer: this.generatePayer,
+                resetGame: this.resetGameHandler,
             }}
         >
             {this.props.children}
