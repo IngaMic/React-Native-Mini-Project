@@ -1,7 +1,8 @@
 # OSX
 #
 .DS_Store
-
+_tests_/
+ios/
 # Xcode
 #
 build/
@@ -21,7 +22,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
-
+.buckconfig
 # Android/IntelliJ
 #
 build/
@@ -35,6 +36,7 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
+package-lock.json
 
 # BUCK
 buck-out/
